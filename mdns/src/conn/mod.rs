@@ -356,7 +356,7 @@ async fn run(
             Ok(a) => a,
             Err(err) => {
                 if Error::ErrSectionDone != err {
-                    log::warn!("Failed to parse mDNS packet {}", err);
+                    //log::warn!("Failed to parse mDNS packet {}", err);
                 }
                 return;
             }
